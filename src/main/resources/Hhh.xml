@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+	<bean id="Supp123" class="pack2.Supplier">
+	</bean>
+
+	<bean id="prodct123" class="pack2.Product">
+		<property name="supp" ref="Supp123">
+		</property>
+	</bean>
+
+
+</beans>
